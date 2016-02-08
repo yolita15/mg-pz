@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     protected $fillable = [
-        'name'
+             'name'
     ];
 
     public function classes() {
-        return $this->hasMany(Clas::class);
+    	return $this->hasMany(Clas::class)
     }
+
 }

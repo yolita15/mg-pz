@@ -6,8 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class MethodOfStudy extends Model
 {
-    protected $table = 'methods_of_study';
     protected $fillable = [
-        'name'
+             'name'
     ];
+
+    protected $table = 'methods_of_study'
+
+    public function classSubject(){
+    	return $this->hasMany(ClassSubject::class)
+    }
 }
