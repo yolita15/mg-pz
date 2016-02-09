@@ -78,7 +78,7 @@
                         <li><a href="{{ url('gallery') }}">Галерия</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ url('classbook') }}"><span class="glyphicon glyphicon-education"></span> Дневник</a></li>
+                        <li><a href="{{ url('login') }}"><span class="glyphicon glyphicon-education"></span> Дневник</a></li>
                     </ul>
                 </div>
 
