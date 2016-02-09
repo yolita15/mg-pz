@@ -16,11 +16,27 @@ class ClassbookController extends Controller
     {
     	$user = User::create([
     		'username' => 'yoanna.murdjeva',
-    		'password' => 'yoanna.murdjeva',
+    		'password' => 'yoannamurdjeva',
     		'first_name' => 'Йоанна',
     		'last_name' => 'Мурджева',
     		'type' => 'admin',
     		]);
+
+        $user = User::create([
+            'username' => 'krasimira.mancheva',
+            'password' => 'krasimiramancheva',
+            'first_name' => 'Красимира',
+            'last_name' => 'Манчева',
+            'type' => 'teacher',
+            ]);
+
+        $user = User::create([
+            'username' => 'liuboslav.stoichev',
+            'password' => 'liuboslavstoichev',
+            'first_name' => 'Любослав',
+            'last_name' => 'Стойчев',
+            'type' => 'student',
+            ]);
 
 
 
