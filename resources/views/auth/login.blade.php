@@ -2,6 +2,11 @@
 
 @section('content')
     <div class="inner-screen">
+
+        @if(Session::has('message'))
+            <p>{{ Session::get('message.message')}}</p>
+        @endif
+
         {!! Form::open([
             'url' => 'login',
             'class' => 'form'

@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl> 
+<!DOCTYPE hmtl>
 	<html>
     <head>
 	<meta charset="utf-8">
@@ -66,7 +66,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="mobilemenu">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{{ url('/') }}">Начало</a></li>
+                        <li class="active"><a href="{{ url('/welcome') }}">Начало</a></li>
                         <li><a href="{{ url('profiles') }}">Прием</a></li>
                         <li><a href="{{ url('program') }}">Програма</a></li>
                         <li><a href="{{ url('teachers') }}">Учителите</a></li>

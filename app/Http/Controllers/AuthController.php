@@ -14,12 +14,12 @@ class AuthController extends Controller
             'username' => $request->input('username'),
             'password' => $request->input('password')
         ])) {
-            return redirect('dashboard');
+            return ("Yeeey, you are in!");
         }
 
         return redirect('login')->with('message', [
             'type' => 'danger',
-            'message' => 'Невалидни данни за вход.'
+            'message' => 'Грешно потребителско име или парола!'
         ]);
     }
 
@@ -28,4 +28,5 @@ class AuthController extends Controller
 
         return redirect('login');
     }
+
 }

@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateUsersTable extends Migration
 {
@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
                 ->unsigned()
                 ->nullable();
             $table->enum('type', ['admin', 'teacher', 'student']);
+            $table->rememberToken();
             $table->timestamps();
 
             });
@@ -135,6 +136,14 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('users');
+        Schema::drop('subjects');
+        Schema::drop('profiles');
+        Schema::drop('classes');
+        Schema::drop('class_subjects');
+        Schema::drop('mark_types');
+        Schema::drop('student_marks');
+        Schema::drop('methods_of_study');
+        Schema::drop('students');
     }
 }

@@ -15,9 +15,9 @@ class RedirectIfAuthenticated
      * @param  string|null  $guard
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guest()) {
+        if (Auth::guard($guard)->check()) {
             return redirect('/');
         }
 

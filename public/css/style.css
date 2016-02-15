@@ -129,18 +129,19 @@ th{
 }
 
 .btn-default{
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
     background-color: rgb(240, 226, 134); 
     border-color:rgba(128, 0, 0, 1.00);
     color:rgba(128, 0, 0, 1.00);
 }
 
 .btn-default:hover {
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
     background-color:rgba(128, 0, 0, 1.00);
     border-color:rgba(128, 0, 0, 1.00);
     color:rgb(240, 226, 134);
 }
+
 
 
 #day {
@@ -280,4 +281,40 @@ h4{
 }
 
 /* Projects */
+
+/* Admin */
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#admin-btn:hover {
+    font-family: Comfortaa, serif;
+    background-color: rgba(128, 0, 0, 1.00);
+    border-color: rgba(128, 0, 0, 1.00);
+    color: rgb(240, 226, 134);
+}
+
+.admin-active {
+    background-color: rgba(128, 0, 0, 1.00);
+    border-color: rgba(128, 0, 0, 1.00);
+    color: rgb(240, 226, 134);
+}
+
+#admin-heading {
+    font-family: Comfortaa, serif;
+    background-color: rgb(240, 226, 134);
+    color: rgba(128, 0, 0, 1.00);
+    border-bottom: 3px solid rgba(128, 0, 0, 1.00);
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #B0BEC5;
+    box-shadow: inset 0 1px 1px rgba(176, 190, 197, 0.37), 0 0 8px rgba(176, 190, 197, 0.33);
+}
+
+/* Admin */
 
