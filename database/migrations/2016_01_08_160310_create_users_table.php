@@ -43,7 +43,8 @@ class CreateUsersTable extends Migration
             $table->integer('profile_id')
                 ->unsigned();
             $table->foreign('profile_id')
-                ->references('id')->on('profiles');
+                ->references('id')->on('profiles')
+                ->onDelete('cascade');
             $table->string('name');
             $table->timestamps();
 
@@ -53,18 +54,18 @@ class CreateUsersTable extends Migration
             $table->integer('class_id')
                 ->unsigned();
             $table->foreign('class_id')
-                ->references('id')->on('classes');
+                ->references('id')->on('classes')
+                ->onDelete('cascade');
             $table->integer('subject_id')
                 ->unsigned();
             $table->foreign('subject_id')
-                ->references('id')->on('subjects');
+                ->references('id')->on('subjects')
+                ->onDelete('cascade');
             $table->integer('teacher_id')
                 ->unsigned();
             $table->foreign('teacher_id')
-                ->references('id')->on('users');
-            $table->integer('method_of_study_id')
-                ->unsigned()
-                ->nullable();
+                ->references('id')->on('users')
+                ->onDelete('cascade');;
             $table->timestamps();
         });
 
@@ -79,52 +80,31 @@ class CreateUsersTable extends Migration
             $table->integer('student_id')
                 ->unsigned();
             $table->foreign('student_id')
-                ->references('id')->on('users');
+                ->references('id')->on('users')
+                ->onDelete('cascade');
             $table->integer('subject_id')
                 ->unsigned();
             $table->foreign('subject_id')
-                ->references('id')->on('subjects');
-            $table->integer('class_id')
-                ->unsigned();
-            $table->foreign('class_id')
-                ->references('id')->on('classes');
+                ->references('id')->on('subjects')
+                ->onDelete('cascade');
             $table->integer('mark_type_id')
                 ->unsigned();
             $table->foreign('mark_type_id')
-                ->references('id')->on('mark_types');
+                ->references('id')->on('mark_types')
+                ->onDelete('cascade');
             $table->integer('mark');
             $table->timestamps();
 
 
         });
 
-        Schema::create('methods_of_study' , function(Blueprint $table){
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
-        }); 
-
-        Schema::create('students', function(Blueprint $table) {
-            $table->increments('id');
-            $table->integer('class_id')
-                ->unsigned();
-            $table->foreign('class_id')
-                ->references('id')->on('classes');
-            $table->timestamps();
-
-        }); 
 
 
         Schema::table('users', function(Blueprint $table) {
             $table->foreign('class_id')
-                ->references('id')->on('classes');
+                ->references('id')->on('classes')
+                ->onDelete('cascade');
         });
-
-        Schema::table('class_subjects', function(Blueprint $table) {
-            $table->foreign('method_of_study_id')
-                ->references('id')->on('methods_of_study');
-
-        }); 
 
 
     }
@@ -143,7 +123,5 @@ class CreateUsersTable extends Migration
         Schema::drop('class_subjects');
         Schema::drop('mark_types');
         Schema::drop('student_marks');
-        Schema::drop('methods_of_study');
-        Schema::drop('students');
     }
 }

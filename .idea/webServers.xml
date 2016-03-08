@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bfbb5fa5-cf6f-4237-8a45-4de37b0a8c4a" name="mg-pz" url="http://ftp.mg-pz.uchenici.bg">
+        <fileTransfer host="ftp.mg-pz.uchenici.bg" port="21" rootFolder="/public_html" password="dfcedf93df92dff8dff9dfcbdf87dfdfdfd4dfe7dfc9dfe2" username="mgpzuche">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

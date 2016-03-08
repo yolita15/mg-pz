@@ -12,7 +12,6 @@ namespace App
             'class_id',
             'subject_id',
             'teacher_id',
-            'method_of_study_id',
 
         ];
 
@@ -23,18 +22,14 @@ namespace App
 
         public function classes()
         {
-            return $this->belongsTo(Clas::class);
+            return $this->belongsTo(Clas::class, 'class_id')->first();
         }
 
         public function user()
         {
-            return $this->belongsTo(User::class);
+            return $this->belongsTo(User::class, 'teacher_id')->first();
         }
 
-        public function methodOfStudy()
-        {
-            return $this->belongsTo(MethodOfStudy::class);
-        }
 
     }
 }

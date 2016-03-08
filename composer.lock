@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9ec89bec17364dfda7ccdcaa6fce102d",
-    "content-hash": "0feb6af5bef0e094e776fba476c27e7c",
+    "hash": "fe3dec58e91d8812f1d297adf3d6c9ce",
+    "content-hash": "785de24bd1d07d2d9b2acc6b216191be",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -487,6 +487,49 @@
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "http://laravelcollective.com",
             "time": "2016-01-27 22:29:54"
+        },
+        {
+            "name": "laravelista/ekko",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravelista/Ekko.git",
+                "reference": "5cef0e992d712ffbddc66ab5856085251f332dce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravelista/Ekko/zipball/5cef0e992d712ffbddc66ab5856085251f332dce",
+                "reference": "5cef0e992d712ffbddc66ab5856085251f332dce",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4.0|~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Laravelista\\Ekko\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Basic",
+                    "email": "mario.basic@outlook.com"
+                }
+            ],
+            "description": "Laravel helper for detecting active navigation menu items and applying bootstrap classes.",
+            "keywords": [
+                "bootstrap",
+                "helper",
+                "laravel",
+                "navigation"
+            ],
+            "time": "2015-05-25 14:19:28"
         },
         {
             "name": "league/flysystem",

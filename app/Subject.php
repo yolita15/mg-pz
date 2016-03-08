@@ -11,10 +11,18 @@ class Subject extends Model
     ];
 
     public function classSubject() {
-    	return $this->hasMany(ClassSubject::class)
+    	return $this->hasMany(ClassSubject::class);
     }
 
-    public function studenrMark() {
-    	return $this->hasMany(StudentMark::class)
+    public function studentMark() {
+    	return $this->hasMany(StudentMark::class);
+    }
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    public function teacher() {
+        return $this->hasMany(Teacher::class);
     }
 }

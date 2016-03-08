@@ -15,32 +15,40 @@
 		<div class="row">
 			<div class="col-md-4" id="director-about">
 				<br>
-				<p>
-					<b>Директор - Ангел Димитров Велков</b>
-                    роден 21.06.1959г. в гр. Пазарджик. 
+				<p align="center">
+					<b>Директор <br>Ангел Димитров Велков</b>
+                    <br>
+                </p>
+                <p>
+                    Роден 21.06.1959г. в гр. Пазарджик.
                     Завършил Пловдивски Университет през 1984г.
                     специалност математика. 
                     Учител в Математическа Гимназия гр. Пазарджик от 1984г.,
                     Заема длъжността  от септември 1992г.
-				</p>
+                </p>
 			</div>
 			<div class="col-md-4" id="director-about">
 				<br>
-				<p>
-					<b>Зам. директор по администр.-стопанската дейност - Величка Петрова Милева</b>
-                    завършила СА "Димитър Ценов" гр. Свищов
+				<p align="center">
+					<b>Зам. директор по администр.-стопанската дейност <br>
+                        Величка Петрова Милева</b>
+                </p>
+                <p>
+                    Завършила СА "Димитър Ценов" гр. Свищов
                     специалност финансов мениджмънт.
                     Заема длъжността  от септември 2004г.
-				</p>
+                </p>
 			</div>
 			<div class="col-md-4" id="director-about">
 				<br>
-				<p>
-					<b>Зам. директор по учебната дейност - Благой Петров Гицев</b>
-                    завършил Софийски Университет
+				<p align="center">
+					<b>Зам. директор по учебната дейност <br>
+                        Благой Петров Гицев</b>
+                </p>
+                    Завършил Софийски Университет
                     специалност история и философия.
                     Заема длъжността  от септември 2000г.
-				</p>
+
 			</div>
 		</div>
 	</div>
@@ -52,7 +60,9 @@
     Сдружение с нестопанска цел <br> „Училищно настоятелство при МГ „К. Величков” – гр. Пазарджик
     <br>ОББ АД Пазарджик, BIC код UBBS BGSF,
     <br>IBAN  BG13UBBS80021031863714
-</p>
+      <br>
+      <a href="{{url('pdf/ustav_nastoyatelstvo.pdf')}}" target="new"> Устав</a>
+  </p>
 </div>
   <div class="container">
   <table class="table table-striped">
@@ -101,13 +111,15 @@
   			<div class="panel panel-danger">
             <div class="panel-heading"><b>Отчет на бюджета</b></div>
             <div class="panel-body">
+                <a href="{{ url('pdf/otchet_31_12_2015.pdf') }}" target="new"><span class="glyphicon glyphicon-usd"></span>  31 декември 2015 г.</a>
+                <br>
             	<a href="{{ url('pdf/otch_na_butjet_30_09_2015.pdf') }}" target="new"><span class="glyphicon glyphicon-usd"></span>  30 септември 2015 г.</a>
             	<br>
             	<a href="{{ url('pdf/otchet_30_06_2015.pdf') }}" target="new"><span class="glyphicon glyphicon-usd"></span>  30 юни 2015 г.</a>
             	<br>
             	<a href="{{ url('pdf/otch_na_butjet_31_03_2015.pdf') }}" target="new"><span class="glyphicon glyphicon-usd"></span>  31 март 2015 г.</a>
             	<br>          	
-            	<a href="{{ url('pdf/otchet_31_12_2014.pdf') }}" target="new"><span class="glyphicon glyphicon-usd"></span>  31 декември 2014 г.</a>            	
+
             </div>
           </div>
             </div>
@@ -121,7 +133,7 @@
               <br>
               <a href="{{ url('pdf/pravilnik3.pdf') }}" target="new"><span class="glyphicon glyphicon-list-alt"></span>  Правилник за Прилагане на Закона за Народната Просвета</a>
               <br>            
-              <a href="{{ url('pdf/zaetost_kab.pdf') }}" target="new"><span class="glyphicon glyphicon-list-alt"></span>  Заетост на кабинетите I срок - 2015/2016 г. </a>              
+              <a href="{{ url('pdf/zaetost_KK_2_srok.pdf') }}" target="new"><span class="glyphicon glyphicon-list-alt"></span>  Заетост на компютърните кабинети </a>
             </div>
             </div>
             </div>

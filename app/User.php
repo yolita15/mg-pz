@@ -31,6 +31,8 @@ class User extends Model implements AuthenticatableContract,
              'type'
     ];
 
+
+
     public function setPasswordAttribute($password)
     {
         $this->attributes['password'] = bcrypt($password);
@@ -44,7 +46,11 @@ class User extends Model implements AuthenticatableContract,
     protected $hidden = ['password', 'remember_token'];
 
     public function classes() {
-        return $this->belongsTo(Clas::class);
+        return $this->belongsTo(Clas::class, 'class_id')->first();
+    }
+
+    public function subjects() {
+        return $this->hasMany(Subject::class);
     }
 
     public function classSubject() {
@@ -53,6 +59,11 @@ class User extends Model implements AuthenticatableContract,
 
     public function studentMark() {
         return $this->hasMany(StudentMark::class);
+    }
+
+    public function getFullNameAttribute()
+    {
+        return $this->first_name . ' ' . $this->last_name;
     }
 
 }

@@ -17,49 +17,49 @@
             <div id="ei-slider" class="ei-slider">
                 <ul class="ei-slider-large">
                     <li>
-                        <img src="{{ url('slider/images/large/6.jpg') }}" alt="image06" >
+                        <img src="{{ url('slider/images/large/111.jpg') }}" alt="image06" >
                         <div class="ei-title">
-                            <h2>Успехът е да се движиш от провал към провал, без да губиш</h2>
-                            <h3>ЕНТУСИАЗЪМ</h3>
+                            {{--<h2>Успехът е да се движиш от провал към провал, без да губиш</h2>--}}
+                            {{--<h3>ЕНТУСИАЗЪМ</h3>--}}
                         </div>
                     </li>
                     <li>
-                        <img src="{{ url('slider/images/large/1.jpg') }}" alt="image01" >
+                        <img src="{{ url('slider/images/large/222.jpg') }}" alt="image01" >
                         <div class="ei-title">
-                            <h2>Знанието е съкровище,<br> което ще последва своя собственик</h2>
-                            <h3>НАВСЯКЪДЕ</h3>
+                            {{--<h2>Знанието е съкровище,<br> което ще последва своя собственик</h2>--}}
+                            {{--<h3>НАВСЯКЪДЕ</h3>--}}
                         </div>
                     </li>
                     <li>
-                        <img src="{{ url('slider/images/large/2.jpg') }}" alt="image02" >
+                        <img src="{{ url('slider/images/large/666.jpg') }}" alt="image02" >
                         <div class="ei-title">
-                            <h2>Великото изкуство <br>  да се научи много е да се започне с</h2>
-                            <h3>МАЛКО</h3>
+                            {{--<h2>Великото изкуство <br>  да се научи много е да се започне с</h2>--}}
+                            {{--<h3>МАЛКО</h3>--}}
                         </div>
                     </li>
                     <li>
-                        <img src="{{ url('slider/images/large/3.jpg') }}" alt="image03" >
+                        <img src="{{ url('slider/images/large/333.jpg') }}" alt="image03" >
                         <div class="ei-title">
-                            <h2>Бих предпочел да вървя с приятел в тъмното, отколкото сам в</h2>
-                            <h3>СВЕТЛИНАТА</h3>
+                            {{--<h2>Бих предпочел да вървя с приятел в тъмното, отколкото сам в</h2>--}}
+                            {{--<h3>СВЕТЛИНАТА</h3>--}}
                         </div>
                     </li>
                     <li>
-                        <img src="{{ url('slider/images/large/4.jpg') }}" alt="image04" >
+                        <img src="{{ url('slider/images/large/444.jpg') }}" alt="image04" >
                         <div class="ei-title">
-                            <h2>Образованието дава <br> отговори на незададени </h2>
-                            <h3>въпроси</h3>
+                            {{--<h2>Образованието дава <br> отговори на незададени </h2>--}}
+                            {{--<h3>въпроси</h3>--}}
                         </div>
                     </li>
                     <li>
-                        <img src="{{ url('slider/images/large/5.jpg') }}" alt="image05" >
+                        <img src="{{ url('slider/images/large/888.jpg') }}" alt="image05" >
                         <div class="ei-title">
-                            <h2>Във всяка наука има толкова истина, <br> колкото има в нея</h2>
-                            <h3>МАТЕМАТИКА</h3>
+                            {{--<h2>Във всяка наука има толкова истина, <br> колкото има в нея</h2>--}}
+                            {{--<h3>МАТЕМАТИКА</h3>--}}
                         </div>
                     </li>
                     <li>
-                        <img src="{{ url('slider/images/large/7.jpg') }}" alt="image07" >
+                        <img src="{{ url('slider/images/large/777.jpg') }}" alt="image07" >
                         <div class="ei-title">
                             <h2></h2>
                             <h3></h3>
@@ -68,13 +68,13 @@
                 </ul><!-- ei-slider-large -->
                 <ul class="ei-slider-thumbs">
                     <li class="ei-slider-element">Current</li>
-                    <li><a href="#">Slide 6</a><img src="{{ url('slider/images/thumbs/6.jpg') }}" alt="thumb06" ></li>
-                    <li><a href="#">Slide 1</a><img src="{{ url('slider/images/thumbs/1.jpg') }}" alt="thumb01" ></li>
-                    <li><a href="#">Slide 2</a><img src="{{ url('slider/images/thumbs/2.jpg') }}" alt="thumb02" ></li>
-                    <li><a href="#">Slide 3</a><img src="{{ url('slider/images/thumbs/3.jpg') }}" alt="thumb03" ></li>
-                    <li><a href="#">Slide 4</a><img src="{{ url('slider/images/thumbs/4.jpg') }}" alt="thumb04" ></li>
-                    <li><a href="#">Slide 5</a><img src="{{ url('slider/images/thumbs/5.jpg') }}" alt="thumb05" ></li>
-                    <li><a href="#">Slide 7</a><img src="{{ url('slider/images/thumbs/7.jpg') }}" alt="thumb07" ></li>
+                    <li><a href="#">Slide 6</a><img src="{{ url('slider/images/thumbs/11.jpg') }}" alt="thumb06" ></li>
+                    <li><a href="#">Slide 1</a><img src="{{ url('slider/images/thumbs/22.jpg') }}" alt="thumb01" ></li>
+                    <li><a href="#">Slide 2</a><img src="{{ url('slider/images/thumbs/66.jpg') }}" alt="thumb02" ></li>
+                    <li><a href="#">Slide 3</a><img src="{{ url('slider/images/thumbs/33.jpg') }}" alt="thumb03" ></li>
+                    <li><a href="#">Slide 4</a><img src="{{ url('slider/images/thumbs/44.jpg') }}" alt="thumb04" ></li>
+                    <li><a href="#">Slide 5</a><img src="{{ url('slider/images/thumbs/88.jpg') }}" alt="thumb05" ></li>
+                    <li><a href="#">Slide 7</a><img src="{{ url('slider/images/thumbs/77.jpg') }}" alt="thumb07" ></li>
                 </ul><!-- ei-slider-thumbs -->
             </div><!-- ei-slider -->
         </wrapper>
@@ -118,7 +118,7 @@
                         <a href="{{ url('pdf/grafik_vakancii.pdf') }}" target="new"><span class="glyphicon glyphicon-calendar"></span> График</a> на ваканциите и неучебните дни за учебната 2015/2016г. 
                     <br>
                     <br>
-                        <a href="students#stipendii"><span class="glyphicon glyphicon-piggy-bank"></span> Отпускане на стипендии. </a>
+                        <a href="{{url('students#stipendii')}}"><span class="glyphicon glyphicon-piggy-bank"></span> Отпускане на стипендии. </a>
                         </div>
                    </div>
                 </div>
@@ -137,9 +137,11 @@
                 </div>
             </div>
         </div>
-       
-
-
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 </body>
  @stop

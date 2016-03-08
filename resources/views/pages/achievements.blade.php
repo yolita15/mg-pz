@@ -10,7 +10,7 @@
   					<div class="col-md-4"><img src="{{ url('images/demetra-vesko.jpg') }}" class="img-rounded img-responsive" ></div>
   				<div  class="col-md-8" id="historytext">
   				<p>
-  					Учениците от XII “a” клас, Веселин Андреев и Деметра Стайкова, станаха лауреати на една от 1015 – те стипендии на фондация <a href="{{ url('http://www.communitas-bg.org/bg/') }}" target="new">„Комунитас”</a> по проект <a href="{{ url('http://www.1000stipendii.org/') }}">„1000 стипендии”</a>, съответно в областите математика и литература.
+  					Учениците от XII “a” клас, Веселин Андреев и Деметра Стайкова, станаха лауреати на една от 1015 – те стипендии на фондация <a href="{{ url('http://www.communitas-bg.org/bg/') }}" target="new">„Комунитас”</a> по проект <a href="{{ url('http://www.1000stipendii.org/') }}" target="new">„1000 стипендии”</a>, съответно в областите математика и литература.
   				</p>
   				<br>
   				<p>

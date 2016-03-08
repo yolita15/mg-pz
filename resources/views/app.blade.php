@@ -38,14 +38,14 @@
             <div class="container-fluid">
 
             <div class="row">
-                <div class="col-sm-1">
+                <div class="col-xs-1">
                     <a href="{{ url('/') }}"><img src="{{ url('images/logo.png') }}"  class="img-responsive" alt="MG K. Velichkov" id="logo"></a>
                 </div>
                 <div class="col-sm-6" id="MG">МАТЕМАТИЧЕСКА ГИМНАЗИЯ <br>"КОНСТАНТИН ВЕЛИЧКОВ"</div>
                 <div class="col-sm-16">
                     <p class="adress">
                         Адрес: гр. Пазарджик 4400, ул."Сан Стефано" №1 <br>
-                        Тел/факс:  (034) 44 45 96, директор (034) 44 23 09 <br>
+                        Тел/факс:  (034) 44 45 96, Пом. Директор (034) 44 23 09 <br>
                         E-mail: mgschoolpz@abv.bg
                     </p>
                 </div>
@@ -56,39 +56,49 @@
 
         <!-- Menu -->
         <nav class="navbar navbar-inverse" id="nav-bar">
-            <div class="container-fluid">
+            {{--<div class="container-fluid">--}}
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mob-menu">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>      
                 </div>
-                <div class="collapse navbar-collapse" id="mobilemenu">
+                <div class="collapse navbar-collapse" id="mob-menu">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{{ url('/welcome') }}">Начало</a></li>
-                        <li><a href="{{ url('profiles') }}">Прием</a></li>
-                        <li><a href="{{ url('program') }}">Програма</a></li>
-                        <li><a href="{{ url('teachers') }}">Учителите</a></li>
-                        <li><a href="{{ url('students') }}">Учениците</a></li>
-                        <li><a href="{{ url('school') }}">Училището</a></li>
-                        <li><a href="{{ url('history') }}">История</a></li>
-                        <li><a href="{{ url('achievements') }}">Успехи</a></li>
-                        <li><a href="{{ url('projects') }}">Проекти</a></li>
-                        <li><a href="{{ url('gallery') }}">Галерия</a></li>
+                        <li class="{{ set_active(['welcome']) }}"><a href="{{ url('welcome') }}">Начало</a></li>
+                        <li class="{{ set_active(['profiles']) }}"><a href="{{ url('profiles') }}">Прием</a></li>
+                        <li class="{{ set_active(['program']) }}"><a href="{{ url('program') }}">Програма</a></li>
+                        <li class="{{ set_active(['theteachers']) }}"><a href="{{ url('theteachers') }}">Учителите</a></li>
+                        <li class="{{ set_active(['students']) }}"><a href="{{ url('students') }}">Учениците</a></li>
+                        <li class="{{ set_active(['school']) }}"><a href="{{ url('school') }}">Училището</a></li>
+                        <li class="{{ set_active(['history']) }}"><a href="{{ url('history') }}">История</a></li>
+                        <li class="{{ set_active(['achievements']) }}"><a href="{{ url('achievements') }}">Успехи</a></li>
+                        <li class="{{ set_active(['projects']) }}"><a href="{{ url('projects') }}">Проекти</a></li>
+                        <li class="{{ set_active(['gallery']) }}"><a href="{{ url('gallery') }}">Галерия</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ url('login') }}"><span class="glyphicon glyphicon-education"></span> Дневник</a></li>
+                        <li class="{{ set_active(['login']) }}"><a href="{{ url('logout') }}">
+                                <span class="glyphicon glyphicon-education"></span> Дневник</a></li>
                     </ul>
                 </div>
 
-            </div>
+            {{--</div>--}}
         </nav>
         <!-- Menu -->
     </header>
         <script src="{{ url('js/app.js') }}"></script>
+    <footer class="footer">
+        <div id="ft">
+            <a href="{{url('https://www.facebook.com/mgpazardjik/')}}" target="new" id="ft">
+                <img src="{{ url('images/fb-logo.png')}}" width="14">   МГ "Константин Величков", гр. Пазарджик</a>
+        </div>
+        <div id="ft"><span class="glyphicon glyphicon-copyright-mark"></span> <i>2016 Yoanna & Stanislava</i>
 
-        
-        @yield('content')
+        </div>
+    </footer>
+
         </body>
+
+    @yield('content')
 </html> 

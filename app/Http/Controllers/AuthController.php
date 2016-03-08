@@ -12,10 +12,29 @@ class AuthController extends Controller
     public function postLogin(\Illuminate\Http\Request $request) {
         if(Auth::attempt([
             'username' => $request->input('username'),
-            'password' => $request->input('password')
+            'password' => $request->input('password'),
+            'type' => 'admin'
         ])) {
-            return ("Yeeey, you are in!");
+            return redirect ('admin');
         }
+
+
+        if(Auth::attempt([
+            'username' => $request->input('username'),
+            'password' => $request->input('password'),
+            'type' => 'teacher'
+        ])) {
+            return redirect ('educator/account');
+        }
+
+        if(Auth::attempt([
+            'username' => $request->input('username'),
+            'password' => $request->input('password'),
+            'type' => 'student'
+        ])) {
+            return redirect ('stu');
+        }
+
 
         return redirect('login')->with('message', [
             'type' => 'danger',
@@ -28,5 +47,6 @@ class AuthController extends Controller
 
         return redirect('login');
     }
+
 
 }

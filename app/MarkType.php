@@ -11,6 +11,6 @@ class MarkType extends Model
     ];
 
     public function studentMark(){
-    	return $this->hasMany(StudentMark::class)
+    	return $this->hasMany(StudentMark::class);
     }
 }

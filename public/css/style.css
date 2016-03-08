@@ -4,17 +4,17 @@ background-color: rgba(0, 0, 0, 0.25); /*Sets the text hover color on navbar*/
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active >   
  a:hover, .navbar-default .navbar-brand .navbar-nav > .active > a:focus {
 color: rgb(249, 249, 184); /*BACKGROUND color for active*/
-background-color: rgba(0, 0, 0, 0.25); 
+background-color: rgba(0, 0, 0, 0.25);
 }
 .navbar-inverse .navbar-nav > li >a {
     color:rgb(249, 249, 184); 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .navbar-inverse  {
     background-color:rgba(128, 0, 0, 1.00);
     border-color:rgba(128, 0, 0, 1.00); 
-    border-bottom: 2px rgba(128, 0, 0, 1.00); 
+    border-bottom: 4px rgba(128, 0, 0, 1.00);
     color:rgb(249, 249, 184); 
 }
 .navbar-brand {
@@ -26,10 +26,13 @@ background-color: rgba(0, 0, 0, 0.25);
     margin:0 0 0 -10px;
     text-indent: none;
 }
+#mob-menu{
+    background-color:rgba(128, 0, 0, 1.00);
+    border-right: 2px solid rgba(128, 0, 0, 1.00);
+}
 
 .adress {
-    font-family: Comfortaa;
-    font-size: small;
+    font-family: Comfortaa, serif;
     text-align:right;
     margin:10px 25px 0 0;
     font-size:12px;
@@ -40,7 +43,8 @@ background-color: rgba(0, 0, 0, 0.25);
     padding: auto;
  }
 #nav-bar{
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
+    background-color:rgba(128, 0, 0, 1.00);
     top:0;
     width: 100%;
     height:20px;
@@ -49,16 +53,41 @@ background-color: rgba(0, 0, 0, 0.25);
     border-radius: 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: Comfortaa, serif;
+    font-size:11px;
+    color: rgb(249, 249, 184);
+    height: 70px;
+    background-color:rgba(128, 0, 0, 1.00);
+    text-align: center;
+}
+#ft{
+    margin: 16px 0 0 5px;
+    color: rgb(249, 249, 184);
+    text-decoration: none;
+}
+#ft:hover{
+    text-decoration: none;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size:14px;
-    background-color: rgb(249, 249, 184); 
+    background-color: rgb(249, 249, 184);
     color: #000;
+    margin-bottom: 70px;
 
 }
 h1{
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
      color:#000;
      font-size:25px;
      text-align: center;
@@ -69,13 +98,13 @@ h1{
 }
 
 h2 {
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
     text-align: center;
     font-size:22px;
 }
 
 #MG{
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
     margin-top:3px;
     line-height: 33px 
 }
@@ -96,9 +125,6 @@ th{
     width: 250px;
     height: 350px;
     margin:0 0 0 50px;
-}
-#director:hover {
-    border-color:rgba(128, 0, 0, 0.81);
 }
 #director-about{
     font-size: 13px;
@@ -145,7 +171,7 @@ th{
 
 
 #day {
-    font-family: Comfortaa;
+    font-family: Comfortaa,serif;
     background-color: white;
     text-align: center; 
     font-size: 15px;
@@ -168,7 +194,7 @@ th{
 
 /* Profiles */
 #profiles-header{
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
     background-color:rgb(240, 226, 134); 
     color:rgba(128, 0, 0, 1.00);
     border-bottom: 3px solid rgba(128, 0, 0, 1.00);
@@ -278,6 +304,13 @@ h4{
 
 #project1 {
     text-align: center;
+    background-color:rgb(240, 226, 134);
+    color: rgba(128, 0, 0, 1.00);
+    font-size: 15px;
+    font-family: Comfortaa, serif;
+    border-bottom: solid rgba(128, 0, 0, 1.00);
+    font-weight: bold;
+
 }
 
 /* Projects */
@@ -288,6 +321,11 @@ h2 {
     text-align: center;
 }
 
+.admin-active{
+    color: rgb(240, 226, 134);
+    background-color: rgba(128, 0, 0, 1.00);
+}
+
 #admin-btn:hover {
     font-family: Comfortaa, serif;
     background-color: rgba(128, 0, 0, 1.00);
@@ -295,11 +333,7 @@ h2 {
     color: rgb(240, 226, 134);
 }
 
-.admin-active {
-    background-color: rgba(128, 0, 0, 1.00);
-    border-color: rgba(128, 0, 0, 1.00);
-    color: rgb(240, 226, 134);
-}
+
 
 #admin-heading {
     font-family: Comfortaa, serif;
@@ -316,5 +350,99 @@ h2 {
     box-shadow: inset 0 1px 1px rgba(176, 190, 197, 0.37), 0 0 8px rgba(176, 190, 197, 0.33);
 }
 
+#admin-table{
+    font-size: 13px;
+}
+
 /* Admin */
+
+/* Educator*/
+#hr1{
+    height: 2px;
+    color: rgba(128, 0, 0, 1.00);
+    background-color: rgba(128, 0, 0, 1.00);
+    border: none;
+}
+#hr2{
+    height: 2px;
+    color: rgba(128, 0, 0, 1.00);
+    background-color: rgba(128, 0, 0, 1.00);
+    border: none;
+}
+.username{
+    color:rgba(128, 0, 0, 1.00);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.username:hover{
+    color:rgba(128, 0, 0, 1.00);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.username:checked{
+    color:rgba(128, 0, 0, 1.00);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.account{
+    background-color: rgb(240, 226, 134);
+    border: 1px solid rgba(128, 0, 0, 1.00);
+    border-radius: inherit;
+}
+
+#educator-heading {
+    background-color: rgb(240, 226, 134);
+    color: rgba(128, 0, 0, 1.00);
+    border: 1px solid rgba(128, 0, 0, 1.00);
+    border-radius: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Educator*/
+
+/* Gallery */
+
+.modal-dialog {}
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+    background-image:none;
+    margin-top:10%;
+    width:5%;
+}
+
+
+.modal-content{
+    background-color: rgba(249, 249, 185, 1.00);
+}
+
+.modal-header {
+    font-family: Comfortaa;
+    color:#000;
+    font-size:20px;
+    text-align: center;
+    color:rgba(128, 0, 0, 1.00);
+    text-shadow: 2px;
+}
+
+.modal-dialog {
+    width: 690px;
+
+}
+
+.modal-body {
+    height: 445px;
+}
+
+.thumbnail {
+    background-color: rgba(128, 0, 0, 1.00);
+}
+
+/* Gallery */
 

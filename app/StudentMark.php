@@ -16,18 +16,18 @@ class StudentMark extends Model
     ];
 
     public function user(){
-    	return $this->belongsTo(User::class)
+    	return $this->belongsTo(User::class,'student_id', 'id')->first();
     }
 
     public function subject(){
-    	return $this->belongsTo(Subject::class)
+    	return $this->belongsTo(Subject::class,'subject_id')->first();
     }
 
     public function classes(){
-    	return $this->belongsTo(Clas::class)
+    	return $this->belongsTo(Clas::class);
     }
 
     public function markType(){
-    	return $this->belongsTo(MarkType::class)
+    	return $this->belongsTo(MarkType::class,'mark_type_id')->first();
     }
 }

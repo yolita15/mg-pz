@@ -11,7 +11,7 @@ class Profile extends Model
     ];
 
     public function classes() {
-    	return $this->hasMany(Clas::class)
+    	return $this->hasMany(Clas::class);
     }
 
 }

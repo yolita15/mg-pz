@@ -289,7 +289,7 @@
                 <tr>
                 	<td colspan="11" id="day"> <b>В Т О Р Н И К </b></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>-1</td>
                     <td></td>
@@ -315,7 +315,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>0</td>
                     <td></td>
@@ -341,7 +341,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>1</td>
                     <td>Руски език</td>
@@ -367,7 +367,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>2</td>
                     <td>Математика</td>
@@ -393,7 +393,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>3</td>
                     <td>История и цивил.</td>
@@ -419,7 +419,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>4</td>
                     <td>Физика и астроном.</td>
@@ -445,7 +445,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>5</td>
                     <td>Бълг.език и литер.</td>
@@ -471,7 +471,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>6</td>
                     <td>Физ.възп.и спорт</td>
@@ -497,7 +497,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="class">
                     <td></td>
                     <td>7</td>
                     <td></td>
