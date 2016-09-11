@@ -8,7 +8,10 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "5.2.*",
-        "laravelista/ekko": "^1.0"
+        "laravelista/ekko": "^1.0",
+        "swiftmailer/swiftmailer": "^5.4",
+        "guzzlehttp/guzzle": "~4.0",
+        "monolog/monolog": "^1.19"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
