@@ -19,26 +19,30 @@ class CreateUsersTable extends Migration
             $table->string('first_name', 20);
             $table->string('last_name', 20);
             $table->integer('class_id')
+                ->nullable();
+            $table->string('email')
+                ->nullable();
+            $table->smallInteger('number_in_class')
                 ->unsigned()
                 ->nullable();
             $table->enum('type', ['admin', 'teacher', 'student']);
             $table->rememberToken();
             $table->timestamps();
 
-            });
-        Schema::create('subjects', function(Blueprint $table) {
+        });
+        Schema::create('subjects', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
 
-            });
-        Schema::create('profiles', function(Blueprint $table) {
+        });
+        Schema::create('profiles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
 
-            });
-        Schema::create('classes', function(Blueprint $table) {
+        });
+        Schema::create('classes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('profile_id')
                 ->unsigned();
@@ -48,8 +52,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->timestamps();
 
-            });
-        Schema::create('class_subjects', function(Blueprint $table) {
+        });
+        Schema::create('class_subjects', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('class_id')
                 ->unsigned();
@@ -69,13 +73,13 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('mark_types', function(Blueprint $table) {
+        Schema::create('mark_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type');
             $table->timestamps();
-        }); 
+        });
 
-        Schema::create('student_marks', function(Blueprint $table){
+        Schema::create('student_marks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('student_id')
                 ->unsigned();
@@ -99,8 +103,7 @@ class CreateUsersTable extends Migration
         });
 
 
-
-        Schema::table('users', function(Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->foreign('class_id')
                 ->references('id')->on('classes')
                 ->onDelete('cascade');

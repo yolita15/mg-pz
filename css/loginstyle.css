@@ -1,0 +1,89 @@
+﻿
+.inner-screen {
+    width: auto;
+    height: 100%;
+    background-image: url(../images/diary.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: -20px auto;
+    padding-top: 150px;
+}
+
+.form {
+    width: 500px;
+    height: 250px;
+    background: rgba(248, 248, 210, 0.58);
+    margin: auto;
+    padding-top: 25px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+input[type="password"] {
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    background: rgba(128, 0, 0, 1.00);
+    width: 80%;
+    height: 20%;
+    padding: 12px;
+    cursor: pointer;
+    color: rgb(249, 249, 184);
+    border: 0px;
+    margin: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: rgb(150, 19, 19);
+}
+
+::-webkit-input-placeholder {
+    color: gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: gray;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: gray;
+}
+
+:-ms-input-placeholder {
+    color: gray;
+}
